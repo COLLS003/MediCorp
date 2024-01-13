@@ -1,0 +1,11 @@
+<form>
+  <div class="mb-3">
+    <label for="exampleTextInput" class="form-label">Text Input</label>
+    <input type="text" class="form-control" id="exampleTextInput">
+  </div>
+  <div class="mb-3">
+    <label for="exampleNumberInput" class="form-label">Number Input</label>
+    <input type="number" class="form-control" id="exampleNumberInput">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
