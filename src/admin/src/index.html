@@ -7,7 +7,7 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Business, Service">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>MediCorp</title>
+    <title>admin</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/2.png" type="image/png">
     <!-- Bootstrap CSS -->
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
 
-  </head>
+  <script defer src="index.js"></script></head>
   
   <body>
 
@@ -60,18 +60,34 @@
         <div class="row space-100">
           <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="contents">
-              <h2 class="head-title">You are Using MediCorp</h2>
-      <form>
-        <div class="mb-3">
-          <label for="text" class="form-label">Text Input</label>
-          <input type="text" class="form-control" id="text" value="name_text">
-        </div>
-      <div class="mb-3">
-        <label for="enumber" class="form-label">Number Input</label>
-        <input type="number" class="form-control" id="code" name="code" placeholder="Enter code">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+              <h2 class="head-title">Welcome Admin</h2>
+              <form id="medicineForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Medicine Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter medicine name">
+                </div>
+                <div class="mb-3">
+                  <label for="code" class="form-label">Medicine Code</label>
+                  <input type="number" class="form-control" id="code" name="code" placeholder="Enter medicine code">
+                </div>
+                <div class="mb-3">
+                  <label for="manufacturedDate" class="form-label">Manufactured Date</label>
+                  <input type="text" class="form-control" id="manufacturedDate" name="manufacturedDate" placeholder="Enter manufactured date">
+                </div>
+                <div class="mb-3">
+                  <label for="expiryDate" class="form-label">Expiry Date</label>
+                  <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="Enter expiry date">
+                </div>
+                <div class="mb-3">
+                  <label for="usages" class="form-label">Usages</label>
+                  <div id="usagesContainer">
+                    <!-- Usages will be dynamically added here -->
+                  </div>
+                  <button type="button" class="btn btn-secondary" onclick="addUsage()">Add Usage</button>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12 p-0">
@@ -97,8 +113,7 @@
                 <i class="lni-cog"></i>
               </div>
               <h4>Validation Result</h4>
-              <h3>Validation Result</h3>
-              <p></p>
+              <p>The prescribed drug is: `${}`</p>
             </div>
           </div>
           <!-- End Col -->
@@ -116,7 +131,7 @@
           <div>   
             <h2 class="section-title">Services We Provide</h2>
             <div class="desc-text">
-              <p>Meditech offers real time, accurate Drug analytical detecting couterfait drugs and distinguishing between counterfait and synthetic drugs</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore.</p>
             </div>
           </div> 
         </div>
@@ -238,10 +253,10 @@
           <div class="col-lg-12">
             <div class="showcase-text section-header text-center">  
               <div>   
-                <h2 class="section-title">Our partners</h2>
+                <h2 class="section-title">Recent Works</h2>
                 <div class="desc-text">
-                  <p>Backed by differet manufuctured, producers and distrubuters,</p>  
-                  <p>We provide accurate and real time data on the drugs in circulation</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>  
+                  <p>eiusmod tempor incididunt ut labore et dolore.</p>
                 </div>
               </div> 
             </div>

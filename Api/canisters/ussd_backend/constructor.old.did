@@ -1,0 +1,20 @@
+type MedicineID = nat32;
+type Medicine = 
+ record {
+   code: nat32;
+   expiryDate: text;
+   manufacturedDate: text;
+   name: text;
+   status: nat32;
+   usages: List;
+ };
+type List = 
+ opt record {
+       text;
+       List;
+     };
+service : {
+  createMedicine: (Medicine) -> (MedicineID);
+  read: (nat32) -> (opt Medicine) query;
+  validate: (text) -> (text) query;
+}

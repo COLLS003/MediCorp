@@ -1,0 +1,4 @@
+export PATH="/home/hash/bin:$PATH"
+
+
+ export PATH="$PATH:/home/hash/bin"

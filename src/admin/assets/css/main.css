@@ -877,7 +877,7 @@ button:focus {
       color: #3ecf8e;
       display: inline-block;
       zoom: 1;
-      display: inline;
+      *display: inline;
       margin: 5px;
       font-size: 16px;
       -webkit-border-radius: 30px;
@@ -897,7 +897,7 @@ button:focus {
       color: #3ecf8e;
       display: inline-block;
       zoom: 1;
-      display: inline;
+      *display: inline;
       margin: 5px;
       font-size: 16px;
       -webkit-border-radius: 30px;
